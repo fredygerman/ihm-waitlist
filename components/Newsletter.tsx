@@ -1,18 +1,16 @@
 "use client";
+import { SubscribeButton } from "./subscribe-button";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
 export const Newsletter = () => {
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     console.log("Subscribed!");
   };
 
   return (
     <section id="newsletter">
-      <hr className="w-11/12 mx-auto" />
-
-      <div className="container py-24 sm:py-32">
+      <div className="container py-12 sm:py-16">
         <h3 className="text-center text-4xl md:text-5xl font-bold">
           Join Our Daily{" "}
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
@@ -20,7 +18,8 @@ export const Newsletter = () => {
           </span>
         </h3>
         <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
-          Lorem ipsum dolor sit amet consectetur.
+          Get the latest updates, news, and special offers delivered directly to
+          your inbox.
         </p>
 
         <form
@@ -32,11 +31,11 @@ export const Newsletter = () => {
             className="bg-muted/50 dark:bg-muted/80 "
             aria-label="email"
           />
-          <Button>Subscribe</Button>
+          <SubscribeButton text="Subscribe" onClick={handleSubmit} />
         </form>
       </div>
 
-      <hr className="w-11/12 mx-auto" />
+      {/* <hr className="w-11/12 mx-auto" /> */}
     </section>
   );
 };

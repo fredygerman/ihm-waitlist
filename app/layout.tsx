@@ -26,17 +26,19 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-black font-sans antialiased",
           fontSans.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <div className="relative flex min-h-screen flex-col">
-            <Navbar />
+          <div className="relative flex max-h-screen flex-col ">
+            {/* <Navbar /> */}
 
-            <div className="flex-1">{children}</div>
-            <Footer />
-            <ScrollToTop />
+            {/* <div className="flex-1"> */}
+              {children}
+              {/* </div> */}
+            {/* <Footer /> */}
+            {/* <ScrollToTop /> */}
           </div>
         </ThemeProvider>
       </body>
