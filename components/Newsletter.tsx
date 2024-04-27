@@ -1,6 +1,6 @@
 "use client";
 import { SubscribeButton } from "./subscribe-button";
-import { Button } from "./ui/button";
+// import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
 export const Newsletter = () => {
@@ -11,19 +11,19 @@ export const Newsletter = () => {
   return (
     <section id="newsletter">
       <div className="container py-12 sm:py-16">
-        <h3 className="text-center text-4xl md:text-5xl font-bold">
+        <h3 className="text-center text-4xl font-bold md:text-5xl">
           Join Our Daily{" "}
-          <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+          <span className="bg-gradient-to-b from-primary/60 to-primary bg-clip-text text-transparent">
             Newsletter
           </span>
         </h3>
-        <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
+        <p className="mb-8 mt-4 text-center text-xl text-muted-foreground">
           Get the latest updates, news, and special offers delivered directly to
           your inbox.
         </p>
 
         <form
-          className="flex flex-col w-full md:flex-row md:w-6/12 lg:w-4/12 mx-auto gap-4 md:gap-2"
+          className="mx-auto flex w-full flex-col gap-4 md:w-6/12 md:flex-row md:gap-2 lg:w-4/12"
           onSubmit={handleSubmit}
         >
           <Input
