@@ -12,8 +12,17 @@ import { siteConfig } from "@/config/site";
 const { title, description } = siteConfig;
 
 export const metadata: Metadata = {
-  title: title,
+  metadataBase: new URL(`https://${process.env.NEXT_PUBLIC_VERCEL_URL}`),
+  title: {
+    default: `${title} `,
+    template: `%s | ${title}`,
+  },
   description: description,
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
