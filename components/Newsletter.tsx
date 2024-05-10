@@ -10,16 +10,15 @@ export const Newsletter = () => {
 
   return (
     <section id="newsletter">
-      <div className="container py-12 sm:py-16">
-        <h3 className="text-center text-4xl font-bold md:text-5xl">
-          Join Our Daily{" "}
+      <div className="container py-8 sm:py-4">
+        <h3 className="text-center text-4xl font-bold text-white md:text-5xl">
+          Join Us{" "}
           <span className="bg-gradient-to-b from-primary/60 to-primary bg-clip-text text-transparent">
-            Newsletter
+            Now
           </span>
         </h3>
         <p className="mb-8 mt-4 text-center text-xl text-muted-foreground">
-          Get the latest updates, news, and special offers delivered directly to
-          your inbox.
+          Navigate Tomorrow with Us
         </p>
 
         <form
@@ -27,11 +26,11 @@ export const Newsletter = () => {
           onSubmit={handleSubmit}
         >
           <Input
-            placeholder="leomirandadev@gmail.com"
-            className="bg-muted/50 dark:bg-muted/80 "
+            placeholder="hassan@gmail.com"
+            className="bg-muted/50"
             aria-label="email"
           />
-          <SubscribeButton text="Subscribe" onClick={handleSubmit} />
+          <SubscribeButton text="Join" onClick={handleSubmit} />
         </form>
       </div>
 
