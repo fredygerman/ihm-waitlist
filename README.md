@@ -38,7 +38,7 @@ Build your React landing page effortlessly with the required sections to your pr
 1. Clone this repositoy:
 
 ```bash
-git clone https://github.com/yetu-ai/next-js-shadcn-landing-page.git
+git clone https://github.com/IHM WORLD-ai/next-js-shadcn-landing-page.git
 ```
 
 2. Go into project

@@ -1,10 +1,10 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "YetuAi",
-  title: "Yetu Ai",
+  name: "IHM WORLD",
+  title: "IHM WORLD - AI Solutions for Businesses and Individuals",
   description:
-    "YetuAi is a startup that provides AI solutions for businesses and individuals.",
+    "IHM WORLD is a startup that provides AI solutions for businesses and individuals.",
   mainNav: [
     {
       title: "Docs",
@@ -24,9 +24,9 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://twitter.com/YetuAiNA",
-    github: "https://github.com/YetuAi-Demos",
-    docs: "https://YetuAi.io/docs",
-    api: "https://api.YetuAi.io",
+    twitter: "https://twitter.com/IHM WORLDNA",
+    github: "https://github.com/IHM WORLD-Demos",
+    docs: "https://IHM WORLD.io/docs",
+    api: "https://api.IHM WORLD.io",
   },
 };
