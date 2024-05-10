@@ -10,7 +10,7 @@ export const Newsletter = () => {
 
   return (
     <section id="newsletter">
-      <div className="container py-8 sm:py-4">
+      <div className="container py-4">
         <h3 className="text-center text-4xl font-bold text-white md:text-5xl">
           Join Us{" "}
           <span className="bg-gradient-to-b from-primary/60 to-primary bg-clip-text text-transparent">
