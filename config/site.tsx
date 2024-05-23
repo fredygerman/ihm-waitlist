@@ -1,4 +1,5 @@
 export type SiteConfig = typeof siteConfig;
+export type DevConfig = typeof devConfig;
 
 export const siteConfig = {
   name: "IHM WORLD",
@@ -29,4 +30,9 @@ export const siteConfig = {
     docs: "https://IHM WORLD.io/docs",
     api: "https://api.IHM WORLD.io",
   },
+};
+
+export const devConfig = {
+  // Add your development config here
+  PosthogEnabled: true,
 };

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
 import { fontSans } from "@/styles/fonts";
-import { ThemeProvider } from "@/components/providers/theme-provider";
 // import { Footer } from "@/components/Footer";
 // import { Navbar } from "@/components/Navbar";
 // import { ScrollToTop } from "@/components/ScrollToTop";
 
 import "./globals.css";
 import { siteConfig } from "@/config/site";
+import { Providers } from "@/components/providers/providers";
+import { env } from "@/env.mjs";
 
 const { title, description } = siteConfig;
 
@@ -32,6 +33,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      {process.env.NEXT_PUBLIC_VERCEL_ENV === "production" &&
+      env.NEXT_PUBLIC_UMAMI_WEBSITE_ID ? (
+        <script
+          async
+          src={`${env.NEXT_PUBLIC_UMAMI_URL}/script.js`}
+          data-website-id={`${env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}`}
+        />
+      ) : null}
       <head />
       <body
         className={cn(
@@ -39,7 +48,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <Providers attribute="class" defaultTheme="dark" enableSystem>
           <div className="relative flex max-h-screen flex-col ">
             {/* <Navbar /> */}
 
@@ -49,7 +58,7 @@ export default function RootLayout({
             {/* <Footer /> */}
             {/* <ScrollToTop /> */}
           </div>
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );
