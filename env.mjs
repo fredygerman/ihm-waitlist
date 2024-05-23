@@ -5,7 +5,7 @@ export const env = createEnv({
   server: {},
   client: {
     // App
-    NEXT_PUBLIC_APP_URL: z.string(),
+    NEXT_PUBLIC_APP_URL: z.string().optional(),
     NEXT_PUBLIC_VERCEL_ENV: z.string().optional(),
 
     // Posthog
