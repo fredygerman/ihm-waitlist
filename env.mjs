@@ -23,7 +23,7 @@ export const env = createEnv({
 
     // Posthog
     NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
-    NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_HOST_URL,
+    NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,
 
     // Umami
     NEXT_PUBLIC_UMAMI_URL: process.env.NEXT_PUBLIC_UMAMI_URL,
